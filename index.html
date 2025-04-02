@@ -1,17 +1,20 @@
 <html>
-<body bgcolor="silver">
+<body bgcolor="silver"  <body style="background-image: url('C:/Users/admin/Desktop/logo.jpg'); 
+             background-size: cover; 
+             background-repeat: no-repeat;
+             background-attachment: fixed;">
 <font size="14">
 <h1>Calculating Diesel</h1>
 
 		<script language="JavaScript">
 		var x;
-		x = prompt("Enter the number:-");
+		x = prompt("Enter the distance:-");
 		{
 		document.write(x);
 		document.write("<br>");
 		diesel= (([x]*2)/100)*15*11;
 		}
-		document.write("the Diesel is:",diesel);
+		document.write('<p style="font-size: 60px; font-weight: bold; color: black  ;">The Diesel is: ' + diesel + '</p>');
 		</script>
 
 <h2>Calculating Cost</h2>
@@ -22,17 +25,19 @@
 		document.write("<br>");
 		Cost= (diesel+150+250)/80;
 		}
-		document.write("the Cost is:",Cost);
+		document.write('<p style="font-size: 60px; font-weight: bold; color: black  ;">The Cost is: ' + Cost + '</p>');
 		</script>
 
 <h3>Calculating Price per Ton</h3>
 		<script language="JavaScript">
-		
+		var i;
+		i = Number(prompt("Enter the cost material:-"));
 		{
+		document.write(i);
 		document.write("<br>");
-		PricePerTon= (Cost)+8.75+12+12;
+		PricePerTon= ((Cost)+8.75+12)+i;
 		}
-		document.write("the Price per ton is:",PricePerTon);
+		document.write('<p style="font-size: 60px; font-weight: bold; color: black  ;">The Price per Ton is: ' + PricePerTon + '</p>');
 		</script>
 </font>
 </body>
